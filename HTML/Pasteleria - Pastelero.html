@@ -1,115 +1,183 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Pasteleria - Pastelero</title>
-    </head>
-    <style>
-        table {
-          font-family: arial, sans-serif;
-          border-collapse: collapse;
-        }
-        
-        td, th {
-          border: 1px solid #dddddd;
-          text-align: left;
-          padding: 8px;
-        }
-        
-        tr:nth-child(even) {
-          background-color: #dddddd;
-        }
 
-        label{
-            font-size: 18px;
-        }
-        
-    </style>
-        <body>
-            <div>
-                <label>Sabores restantes</label>
-                <table>
-                    <tr>
-                      <th>Sabor</th>
-                      <th>Cantidad</th>
-                    </tr>
-                    <tr>
-                      <td>Fresa</td>
-                      <td>5</td>
-                    </tr>
-                    <tr>
-                      <td>Chocolate</td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>Vainilla</td>
-                      <td>18</td>
-                    </tr>
-                    <tr>
-                      <td>Chicle</td>
-                      <td>0</td>
-                    </tr>
-                </table>
-                <label>Decoraciones restantes</label>
-                <table>
-                    <tr>
-                      <th>Decoracion</th>
-                      <th>Cantidad</th>
-                    </tr>
-                    <tr>
-                      <td>Frutas</td>
-                      <td>5kg</td>
-                    </tr>
-                    <tr>
-                      <td>Cintas</td>
-                      <td>20mts</td>
-                    </tr>
-                    <tr>
-                      <td>Caramelos</td>
-                      <td>18kg</td>
-                    </tr>
-                    <tr>
-                      <td>Malvaviscos</td>
-                      <td>0</td>
-                    </tr>
-                </table>
-                <label>Pedidos realizados</label>
-                <table>
-                    <tr>
-                      <th>Nombre</th>
-                      <th>Telefono</th>
-                      <th>E-mail</th>
-                      <th>Descripcion</th>
-                    </tr>
-                    <tr>
-                        <td>Francisco</td>
-                        <td>1234567890</td>
-                        <td>pruebas@gmail.com</td>
-                        <td>Pastel de chocolate con frutas</td>
-                    </tr>
-                    <tr>
-                        <td>Francisco</td>
-                        <td>1234567890</td>
-                        <td>pruebas@gmail.com</td>
-                        <td>Pastel de chocolate con frutas y malvaviscos</td>
-                    </tr>
-                    <tr>
-                        <td>Francisco</td>
-                        <td>1234567890</td>
-                        <td>pruebas@gmail.com</td>
-                        <td>Pastel de fresa con frutas</td>
-                    </tr>
-                    <tr>
-                        <td>Francisco</td>
-                        <td>1234567890</td>
-                        <td>pruebas@gmail.com</td>
-                        <td>Pastel de vainilla con caramelos</td>
-                    </tr>
-                </table>
-            </div>
-        </body>
-        <footer>
-            <label>Direccion: San cristobal de las casas, chiapas</label><br>
-            <label>Telefono: 1257894536</label><br>
-            <label>Horarios de atención: Lunes a sabado de 9:00 am a 7:00 pm, Domingos: 8:00 am a 5:00 pm</label>
-        </footer>
+<head>
+  <title>Pasteleria - Pastelero</title>
+</head>
+<style>
+  body {
+    background-image: url("logo2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .encabezado0 {
+    margin: 10px;
+    text-align: center;
+  }
+
+
+  #logo {
+    border-radius: 50%;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+  }
+
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  .footerCont {
+    background-color: rgba(100, 100, 100, 0.3);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 18px;
+    font-style: italic;
+    color: white;
+  }
+
+  .contenedor {
+    width: 99%;
+    position: absolute;
+    display: inline-block;
+  }
+
+  .encabezadoTabla{
+    font-size: 25px;
+  }
+
+  .contenedorTabla{
+    float: left;
+    width: 15%;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 5px;
+  }
+
+  #contenedorTabla2{
+    float: left;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 5px;
+  }
+
+</style>
+
+<body>
+  <div class="encabezado0">
+    <img src="logo.png" width="200px" height="200px" id="logo" />
+  </div>
+  <div class="contenedor">
+    <div class="contenedorTabla">
+      <label class="encabezadoTabla">Ingredientes restantes</label><br><br>
+      <label>Sabores restantes</label>
+      <table>
+        <tr>
+          <th>Sabor</th>
+          <th>Cantidad</th>
+        </tr>
+        <tr>
+          <td>Fresa</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Chocolate</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Vainilla</td>
+          <td>18</td>
+        </tr>
+        <tr>
+          <td>Chicle</td>
+          <td>0</td>
+        </tr>
+      </table>
+      <br><br>
+      <label>Decoraciones restantes</label>
+      <table>
+        <tr>
+          <th>Decoracion</th>
+          <th>Cantidad</th>
+        </tr>
+        <tr>
+          <td>Frutas</td>
+          <td>5kg</td>
+        </tr>
+        <tr>
+          <td>Cintas</td>
+          <td>20mts</td>
+        </tr>
+        <tr>
+          <td>Caramelos</td>
+          <td>18kg</td>
+        </tr>
+        <tr>
+          <td>Malvaviscos</td>
+          <td>0</td>
+        </tr>
+      </table>
+    </div>
+    <div id="contenedorTabla2">
+      <label class="encabezadoTabla">Pedidos realizados</label>
+      <table>
+        <tr>
+          <th>Nombre</th>
+          <th>Telefono</th>
+          <th>E-mail</th>
+          <th>Descripcion</th>
+        </tr>
+        <tr>
+          <td>Francisco</td>
+          <td>1234567890</td>
+          <td>pruebas@gmail.com</td>
+          <td>Pastel de chocolate con frutas</td>
+        </tr>
+        <tr>
+          <td>Francisco</td>
+          <td>1234567890</td>
+          <td>pruebas@gmail.com</td>
+          <td>Pastel de chocolate con frutas y malvaviscos</td>
+        </tr>
+        <tr>
+          <td>Francisco</td>
+          <td>1234567890</td>
+          <td>pruebas@gmail.com</td>
+          <td>Pastel de fresa con frutas</td>
+        </tr>
+        <tr>
+          <td>Francisco</td>
+          <td>1234567890</td>
+          <td>pruebas@gmail.com</td>
+          <td>Pastel de vainilla con caramelos</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <footer>
+    <div class="footerCont">
+      <p>
+        Direccion: San Andrés Larrainzar, Chiapas. <br>
+        Telefono: 9671137057. <br>
+        Horarios de atención: Lunes - Sabado: 9:00 am - 7:00 pm. - Domingos: 8:00 am - 4:00 pm
+      </p>
+    </div>
+  </footer>
+</body>
+
 </html>

@@ -1,34 +1,119 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Pasteleria - cliente</title>
-        </head>
-        <body>
-            <div>
-                <form style="text-align: center;">
-                    <br><br><br><br><br>
-                    <label>Elija su pastel</label><br><br><br><br><br>
-                    <label>Sabores</label><br>
-                    <input type="checkbox" id="fresa" name="fresa" value="Fresa">
-                    <label for="fresa">Fresa | $100</label><br>
-                    <input type="checkbox" id="chocolate" name="chocolate" value="Chocolate">
-                    <label for="chocolate">Chocolate | $150</label><br>
-                    <input type="checkbox" id="vainilla" name="vainilla" value="Vainilla">
-                    <label for="vainilla">Vainilla | $90</label><br><br>
-                    <label>Decoraciones</label><br>
-                    <input type="checkbox" id="fruta" name="fruta" value="Fruta">
-                    <label for="fruta">Fruta | $100</label><br>
-                    <input type="checkbox" id="caramelos" name="caramelos" value="Caramelos">
-                    <label for="Caramelos">Caramelos | $100</label><br><br>
-                    <label for="Caramelos">Datos del cliente</label><br>
-    
-                    <input placeholder="Nombre" /><br>
-                    <input placeholder="Telefono" /><br>
-                    <input placeholder="Correo electronico" /><br>
-                    <input type="text" style="height: 100px;" placeholder="Descripcion del pastel" /><br>
-                    <button type="submit">Enviar</button>
-    
-                </form>
-            </div>
-        </body>
+
+<head>
+    <title>Pasteleria - cliente</title>
+</head>
+<style>
+    body {
+        /* background: linear-gradient(0deg, rgba(253,200,48,1) 0%, rgba(243,115,53,1) 100%); */
+        background-image: url("logo1.jpg");
+        background-repeat: no-repeat;
+    }
+
+    html,
+    body {
+        min-height: 100%;
+    }
+
+    .encabezado0 {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .encabezado {
+        font-size: 25px;
+    }
+
+    .nombre {
+        font-size: 35px;
+        font-style: italic;
+    }
+
+    .contenedorFormulario {
+        padding-top: 20px;
+        border-radius: 40px;
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 20%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    input {
+        margin: 5px;
+        border-radius: 5px;
+        border: 1px solid;
+    }
+
+    .entradaDeTexto {
+        width: 250px;
+        ;
+    }
+
+    #btnEnviarPedido {
+        border-radius: 3px;
+        margin: 5px;
+        /* background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%); */
+        background-color: #27ae60;
+        color: white;
+        width: 80px;
+        height: 25px;
+    }
+
+    #logo {
+        border-radius: 50%;
+    }
+
+    .footerCont {
+        background-color: rgba(100, 100, 100, 0.3);
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 18px;
+        font-style: italic;
+        color: darkblue;
+    }
+</style>
+
+<body>
+    <div class="encabezado0">
+        <img src="logo.png" width="200px" height="200px" id="logo" />
+    </div>
+    <div class="contenedorFormulario">
+        <form>
+            <label class="encabezado">Elija su pastel</label><br><br>
+            <label>Sabores</label><br>
+            <input type="checkbox">
+            <label for="fresa">Fresa | $100</label>
+            <input type="checkbox">
+            <label for="chocolate">Chocolate | $150</label>
+            <input type="checkbox">
+            <label for="vainilla">Vainilla | $90</label><br><br>
+            <label>Decoraciones</label><br>
+            <input type="checkbox">
+            <label for="fruta">Fruta | $100</label>
+            <input type="checkbox">
+            <label for="Caramelos">Caramelos | $100</label><br><br>
+            <label for="Caramelos">Mis datos</label><br>
+
+            <input placeholder="Nombre" class="entradaDeTexto" /><br>
+            <input placeholder="Telefono" class="entradaDeTexto" /><br>
+            <input placeholder="Correo electronico" class="entradaDeTexto" /><br>
+            <input type="text" style="width: 250px; height: 100px;" placeholder="Descripcion del pastel" /><br>
+            <button type="submit" id="btnEnviarPedido">Enviar</button>
+
+        </form>
+    </div>
+    <footer>
+        <div class="footerCont">
+            <p>
+                Direccion: San Andrés Larrainzar, Chiapas. <br>
+                Telefono: 9671137057. <br>
+                Horarios de atención: Lunes - Sabado: 9:00 am - 7:00 pm. - Domingos: 8:00 am - 4:00 pm
+            </p>
+        </div>
+    </footer>
+</body>
+
 </html>

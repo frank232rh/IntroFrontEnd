@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+/*************  ESTILOS HEADER  *************/
+header{
+    top: 0;
+    left: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    padding: 20px 0px;
+    min-width: 1000px;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(230,244,252,1) 52%);
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+#contenedorHeader{
+    width: 100%;
+}
+
+.aOption0{
+    position: relative;
+    color: #2949c7;
+    text-decoration: none;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 1s;
+}
+
+.liOption{
+    width: 9%;
+    margin: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #6d7b93;
+    letter-spacing: 2px;
+    transition: 1s;
+}
+
+#liOption0{
+    width: 40%;
+}
+
+.liOption2{
+    margin: 15px;
+}
+
+.btnHB{
+    background-color: #2B4BC9;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    border-color: transparent;
+    width: 130px;
+    height: 40px;
+    padding: 3px;
+}
+/********************************************/
+
+/*************  ESTILOS BODY  *************/
+body{
+    background-color: white;
+}
+
+li{
+    list-style: none;
+}
+
+section {
+    min-width: 1000px;
+    height:100vh; /*hace el scroll automatico*/
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+section h1{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    font-size: 50px;
+    word-wrap: break-word;
+    font-weight: bold;
+    color: #18386d;
+}
+
+#section0{
+    align-items: center;
+    
+}
+
+.contenedorTF{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedorCentro{
+    display: flex;
+    padding: 0px 0px 0px 30px;
+}
+
+.containerLeft{
+    float: left; 
+    width: 50%;
+}
+
+
+/* .containerLeft h1{
+    margin: 0px;
+    font-size: 50px;
+    word-wrap: break-word;
+    font-weight: bold;
+    color: #18386d;
+} */
+
+.ContainerRight{
+    float: right;
+    width: 50%; 
+    z-index: -100;
+}
+
+.img01{
+    width: 100%;
+    height: 75vh;
+    z-index: -100;
+}
+
+.infoText{
+    font-size: 25px;
+    color: #6B7991;
+    font-weight: 500;
+}
+
+.yellowIcons{
+    color: #ffce0b;
+    background-color: #FFF8DE;
+}
+
+.listadoMain0{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    color: #334F7E;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.listadoMain0 li{
+    padding-right: 50px;
+}
+
+.listadoMain0 li a {
+    /* color: #fff; */
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.listadoMain0 li span {
+    padding: 5px;
+}
+
+.listadoMain0 li span {
+    padding: 5px;
+}
+
+.listadoMain1{
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+    color: #334F7E;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.listadoMain1 li a{
+    padding-right: 50px;
+}
+
+.schedule {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.blueIcon {
+    color: #2c4cca;
+    background: #e3e9ff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.schedule p {
+    padding: 5px;
+    color: #2d4a7b;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.vaccinDate{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 150%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px lightgray;
+    z-index: 5000;
+}
+
+.ulImgs{
+    display: flex;
+}
+
+.contenedorImgs{
+    background-color: #2949c7;
+    width: 200%;
+}
+
+.contenedorImgs ul li{
+    position: relative;
+    bottom: 0;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 86.6px 50px 0 50px;
+    border-color: #f4f6fb transparent transparent transparent;
+}
+
+.triangle1 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #f4f6fb transparent;
+}
+
+.triangle2{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100px 100px 0;
+    border-color: transparent #f4f6fb transparent transparent;
+}
+.footSec{
+    height: -webkit-fill-available;
+}
+
+.triangle3{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 0 0 100px;
+    border-color: transparent transparent transparent #f4f6fb;
+}
+
+.triangle4{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 100px 0 0;
+    border-color: #f4f6fb transparent transparent transparent;
+}
+
+.seFlex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    padding: 20px;
+    width: 20%;
+    height: 40vh;
+    border: 1px #FAFAFF solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+#section1 h2{
+    padding-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    font-size: 3.0vh;
+    word-wrap: break-word;
+    font-weight: bold;
+    color: #18386d;
+}
+
+.infoText1{
+    font-size: 25px;
+    color: #6B7991;
+    font-weight: 500;
+    font-size: 2.5vmin;
+}
+
+.card span{
+    padding: 5px;
+    font-size: 40px;
+}
+
+.section2Header{
+    margin-left: 50px;
+}
+
+#section2 h2{
+    padding-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    font-size: 2.2vh;
+    color: #18386d;
+    text-align: left;
+}
+
+
+.cardS2{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 20px;
+    margin: 10px;
+    width: 70%;
+    height: 2vw;
+    border: 1px #FAFAFF solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+.cardS2_1{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 20px;
+    width: 70%;
+    height: 6vw;
+    border: 1px #FAFAFF solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+
+.cardS2_2{
+    margin-left: 10px;
+    width: 75%;
+    height: 10vw;
+    border: 1px #FAFAFF solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+.cardS2_3{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 70%;
+}
+
+.cardS2 .span1{
+    padding: 5px;
+    font-size: 40px;
+    height: 40px;
+}
+
+.smallBlueIcon{
+    margin-top: 10px;
+    color: #2c4cca;
+    /* background: #e3e9ff; */
+    border-radius: 5px;
+    font-size: 20px;
+    height: 30px;
+}
+
+.img03{
+    position: relative;
+}
+
+.containerContactCard{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.contactCard{
+    padding: 5%;
+    width: 25%;
+    height: 20vh;
+    border: 1px #FAFAFF solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+.contactCard h2{
+    color: #18386d;
+}
+
+.contactCard h3{
+    color: #6d7b93;
+}
+
+.cardContacto{
+    background-color: #ffce0b;
+    display: flex;
+    align-items: center;
+}
+
+.contactButton{
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #3555D3;
+    background-color: #F1F5FF;
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: transparent;
+}
+
+.contactButton:hover{
+    background-color: #3555D3;
+    color: #F1F5FF;
+}
+
+/********************************************/
+
+/*************  ESTILOS FOOTER  *************/
+
+footer{
+    background-color: #EEF3FF;
+    font-family: 'Poppins', sans-serif;
+    top: 0;
+    left: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    padding: 20px 0px;
+    min-width: 1000px;
+}
+
+footer h2{
+    color: #2949c7;
+    font-size: 2vh;
+}
+
+footer h3{
+    color: #6B7991;
+    font-size: 1.5vh;
+}
+
+.footerText{
+    font-size: 25px;
+    color: #6B7991;
+    font-size: 1.5vh;
+}
+
+.flexFooter{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerLeft{
+    padding-left: 5%;
+    width: 50%;
+}
+
+.footerRight{
+    width: 50%;
+}
+/********************************************/
